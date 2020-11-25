@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, FormattedDate, FormattedTime } from "react-intl";
 
 function App(props) {
   const { setLocale } = props;
@@ -23,6 +23,16 @@ function App(props) {
           rel="noopener noreferrer"
         >
           <FormattedMessage id="app.learn" values={{ name: "React" }} />
+          <br />
+          <FormattedDate
+            value={new Date()}
+            year="numeric"
+            month="long"
+            day="numeric"
+            weekday="long"
+          />
+          <br />
+          <FormattedTime value={new Date()} />
         </a>
       </header>
     </div>
