@@ -22,7 +22,7 @@ function App(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FormattedMessage id="app.learn" values={{ name: "Javascript" }} />
+          <FormattedMessage id="app.learn" values={{ name: "React" }} />
           <br />
           <FormattedDate
             value={new Date()}
